@@ -1,0 +1,27 @@
+[project]
+name = "data-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Khushi Sarpal", email = "khushisarpal24@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "ipython>=9.18.1",
+    "langchain>=1.4.3",
+    "langchain-anthropic>=1.7.5",
+    "langchain-openai>=1.6.7",
+    "langgraph>=1.2.12",
+    "pandas>=3.1.1",
+    "psycopg2-binary>=2.9.13",
+    "pydantic>=2.13.5",
+]
+
+[project.scripts]
+data-agent = "data_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
